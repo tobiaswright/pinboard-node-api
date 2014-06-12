@@ -9,14 +9,14 @@ Install the module with: `npm install pinboard-api`
 
 ```javascript
 var pin = require('pinboard-api');
-
+```
 ### Get Access Token
 
 pin.getAcessToken( user, password, function() {
 	console.log( data )
 	//returns access_token
 });
-
+```
 ### Get Recent Post
 
 pin.getRecent( user, access_token, options, function() {

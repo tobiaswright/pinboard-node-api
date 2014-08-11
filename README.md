@@ -12,6 +12,7 @@ var pin = require('pinboard-api');
 ```
 ### Get Access Token
 
+```javascript
 pin.getAcessToken( user, password, function() {
 	console.log( data )
 	//returns access_token

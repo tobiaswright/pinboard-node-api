@@ -29,7 +29,7 @@ pin.getAcessToken( required, function() {
 
 var required = {user: "username", password: "password"};
 
-pin.getAcessToken( required, function() {
+pin.getLastupdate( required, function() {
 	console.log( data )
 	//returns time of last update
 });
@@ -48,7 +48,7 @@ var required = {
 	title: "Title of page"
 };
 
-pin.getRecent( required, options, function() {
+pin.addBookmark( required, options, function() {
 	console.log( data );
 	//returns done
 });
@@ -69,7 +69,7 @@ options = {
 
 var required = {user: "username", password: "password", url: "url"};
 
-pin.getAcessToken( required, function() {
+pin.deleteBookmark( required, function() {
 	console.log( data )
 	//returns done
 });

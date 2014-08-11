@@ -13,7 +13,10 @@ var pin = require('pinboard-api');
 ### Get Access Token
 
 ```javascript
-pin.getAcessToken( user, password, function() {
+
+var required = {user: "username", password: "password"}
+
+pin.getAcessToken( required, function() {
 	console.log( data )
 	//returns access_token
 });
@@ -21,7 +24,10 @@ pin.getAcessToken( user, password, function() {
 ### Get Recent Post
 
 ```javascript
-pin.getRecent( user, access_token, options, function() {
+
+var required = {user: "username", token: "access_token"}
+
+pin.getRecent( required, options, function() {
 	console.log( data )
 });
 ```
@@ -38,7 +44,10 @@ options = {
 ### Get All Post
 
 ```javascript
-pin.getAll( user, access_token, options, function() {
+
+var required = {user: "username", token: "access_token"}
+
+pin.getAll( required, options, function() {
 	console.log( data )
 });
 

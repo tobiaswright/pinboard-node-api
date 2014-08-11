@@ -20,13 +20,14 @@ pin.getAcessToken( user, password, function() {
 ```
 ### Get Recent Post
 
+```javascript
 pin.getRecent( user, access_token, options, function() {
 	console.log( data )
 });
 ```
 'options' is an optional parameter and needs to be an object using the parameters of the pinboard.in [post_recent](https://pinboard.in/api#posts_recent) method
 
-```
+```javascript
 options = {
 	tag: "tag1,tag2,tag3",
 	count: 5,
@@ -36,7 +37,7 @@ options = {
 
 ### Get All Post
 
-```
+```javascript
 pin.getAll( user, access_token, options, function() {
 	console.log( data )
 });
@@ -44,7 +45,7 @@ pin.getAll( user, access_token, options, function() {
 ```
 'options' is an optional parameter and needs to be an object using the parameters of the pinboard.in [post_all](https://pinboard.in/api#posts_all) method
 
-```
+```javascript
 options = {
 	tag: "tag1,tag2,tag3",
 	count: 5

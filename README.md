@@ -37,6 +37,46 @@ pin.getAcessToken( required, function() {
 
 More info on [update](https://pinboard.in/api#posts_update) method
 
+### Add Bookmark
+
+```javascript
+
+var required = {
+	user: "username",
+	token: "access_token",
+	url: "http://www.example.com",
+	title: "Title of page"
+};
+
+pin.getRecent( required, options, function() {
+	console.log( data );
+	//returns done
+});
+```
+'options' is an optional parameter and needs to be an object using the parameters of the pinboard.in [add](https://pinboard.in/api#posts_add) method
+
+```javascript
+options = {
+	tags: "tag1,tag2,tag3",
+	toread: "yes",
+	....
+}
+```
+
+### Delete Bookmark
+
+```javascript
+
+var required = {user: "username", password: "password", url: "url"};
+
+pin.getAcessToken( required, function() {
+	console.log( data )
+	//returns done
+});
+```
+
+More info on [delete](https://pinboard.in/api#posts_delete) method
+
 ### Get Recent Post
 
 ```javascript

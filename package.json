@@ -1,6 +1,6 @@
 {
   "name": "pinboard-api",
-  "version": "0.0.5.1",
+  "version": "0.0.6",
   "main": "lib/pinboard-api.js",
   "description": "Node npm for pinboard.in",
   "homepage": "https://github.com/tobiaswright/pinboard-node-api",

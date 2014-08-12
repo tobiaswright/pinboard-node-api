@@ -17,7 +17,7 @@ var pin = require('pinboard-api');
 
 var required = {user: "username", password: "password"};
 
-pin.getAcessToken( required, function() {
+pin.getAcessToken( required, function(data) {
 	console.log( data )
 	//returns access_token
 });
@@ -29,7 +29,7 @@ pin.getAcessToken( required, function() {
 
 var required = {user: "username", password: "password"};
 
-pin.getLastupdate( required, function() {
+pin.getLastupdate( required, function(data) {
 	console.log( data )
 	//returns time of last update
 });
@@ -48,7 +48,7 @@ var required = {
 	title: "Title of page"
 };
 
-pin.addBookmark( required, options, function() {
+pin.addBookmark( required, options, function(data) {
 	console.log( data );
 	//returns done
 });
@@ -69,7 +69,7 @@ options = {
 
 var required = {user: "username", password: "password", url: "url"};
 
-pin.deleteBookmark( required, function() {
+pin.deleteBookmark( required, function(data) {
 	console.log( data )
 	//returns done
 });
@@ -83,7 +83,7 @@ More info on [delete](https://pinboard.in/api#posts_delete) method
 
 var required = {user: "username", token: "access_token"};
 
-pin.getRecent( required, options, function() {
+pin.getRecent( required, options, function(data) {
 	console.log( data );
 	//returns recent post
 });
@@ -104,7 +104,7 @@ options = {
 
 var required = {user: "username", token: "access_token"};
 
-pin.getAll( required, options, function() {
+pin.getAll( required, options, function(data) {
 	console.log( data );
 	//returns all post
 });

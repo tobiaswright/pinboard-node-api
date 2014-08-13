@@ -27,7 +27,7 @@ pin.getAcessToken( required, function(data) {
 
 ```javascript
 
-var required = {user: "username", password: "password"};
+var required = {user: "username", token: "access_token"};
 
 pin.getLastupdate( required, function(data) {
 	console.log( data )
@@ -67,7 +67,7 @@ options = {
 
 ```javascript
 
-var required = {user: "username", password: "password", url: "url"};
+var required = {user: "username", token: "access_token", url: "url"};
 
 pin.deleteBookmark( required, function(data) {
 	console.log( data )
